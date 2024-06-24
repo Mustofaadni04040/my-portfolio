@@ -28,6 +28,8 @@
     "react/jsx-curly-newline": "off",
     "react/no-unknown-property": "off",
     "react/function-component-definition": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "no-console": "off",
+    "react/require-default-props": "off"
   }
 }
