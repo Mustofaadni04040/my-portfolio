@@ -30,6 +30,9 @@
     "react/function-component-definition": "off",
     "operator-linebreak": "off",
     "no-console": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-wrap-multilines": "off",
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": "off"
   }
 }
