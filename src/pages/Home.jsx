@@ -3,11 +3,11 @@ import { Canvas } from '@react-three/fiber';
 import Loader from '../components/Loader';
 import Island from '../models/Island';
 import Sky from '../models/Sky';
-import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
 import sakura from '../assets/sakura.mp3';
 import { soundoff, soundon } from '../assets/icons';
+import Dragon from '../models/Bird';
 
 export default function Home() {
   const [isRotating, setIsRotating] = useState(false);
@@ -51,11 +51,11 @@ export default function Home() {
     let screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
-      screenPosition = [0, -1.5, 0];
+      screenScale = [0.1, 0.1, 0.1];
+      screenPosition = [0, -4, -8];
     } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -4];
+      screenScale = [0.1, 0.1, 0.1];
+      screenPosition = [0, -4, -6];
     }
     return [screenScale, screenPosition];
   };
@@ -84,7 +84,7 @@ export default function Home() {
             intensity={1}
           />
 
-          <Bird />
+          <Dragon />
           <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}
@@ -98,7 +98,7 @@ export default function Home() {
             isRotating={isRotating}
             scale={planeScale}
             position={planePosition}
-            rotation={[0, 20, 0]}
+            rotation={[0, 9.5, 0]}
           />
         </Suspense>
       </Canvas>

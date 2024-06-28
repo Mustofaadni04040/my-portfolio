@@ -1,4 +1,4 @@
-import { meta, shopify, tesla } from '../assets/images';
+import { indosat, dicoding } from '../assets/images';
 import {
   car,
   css,
@@ -104,42 +104,28 @@ export const skills = [
 
 export const experiences = [
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#fbc3bc',
-    date: 'Jan 2021 - Feb 2022',
+    title: 'React Developer and Back-End',
+    company_name: 'MSIB Kampus Merdeka - Dicoding Indonesia',
+    icon: dicoding,
+    iconBg: '#8CC4FF',
+    date: 'Feb 2024 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Learning classes from Basic Web Programming to React Expert, incorporating both Hard Skills and Soft Skills.',
+      'Build Final Capstone Project, Crowdfunding Website "Bersama Palestina". The project using Tech Stack : ReactJS, TailwindCSS, Redux, and Google Auth for Login.',
+      'Collaborating with cross-functional teams including product manager and Back-End developer to create high-quality website.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
       'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#b7e4c7',
-    date: 'Jan 2022 - Jan 2023',
+    title: 'React Developer',
+    company_name: 'ID-Camp - Indosat Oooredoo Hutchison Digital Camp',
+    icon: indosat,
+    iconBg: '#FFE190',
+    date: 'Sept 2023 - Okt 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#a2d2ff',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Learning experience designed to develop skills in web development, particularly in React.',
+      'Covered a wide range of topics from the basics of web programming to advanced concepts in React, incorporating both hard skills and soft skills essential for a professional developer.',
     ],
   },
 ];

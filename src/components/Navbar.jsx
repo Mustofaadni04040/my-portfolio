@@ -15,7 +15,7 @@ export default function Navbar() {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? 'text-blue-500' : 'text-black'
+            isActive ? 'text-blue-900' : 'text-slate-400'
           }
         >
           About
@@ -23,7 +23,7 @@ export default function Navbar() {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? 'text-blue-500' : 'text-black'
+            isActive ? 'text-blue-900' : 'text-slate-400'
           }
         >
           Projects

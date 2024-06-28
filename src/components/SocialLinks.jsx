@@ -9,7 +9,7 @@ export default function SocialLinks() {
         <p className="text-slate-500">Let&apos;s Connect</p>
         <div className="flex items-center gap-5">
           {socialLinks.map((icon) => (
-            <Link to={icon.link}>
+            <Link to={icon.link} key={icon.name} target="_blank">
               <img
                 src={icon.iconUrl}
                 alt={icon.name}

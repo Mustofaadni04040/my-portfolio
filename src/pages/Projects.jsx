@@ -39,7 +39,7 @@ export default function Projects() {
                   to={project.link}
                   target="_black"
                   rel="noopener noreferrer"
-                  className="font-semibold text-blue-600"
+                  className="font-semibold text-blue-900"
                 >
                   Live Link
                 </Link>

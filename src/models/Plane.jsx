@@ -10,9 +10,9 @@ export default function Plane({ isRotating, ...props }) {
 
   useEffect(() => {
     if (isRotating) {
-      actions['Take 001'].play();
+      actions.Scene.play();
     } else {
-      actions['Take 001'].stop();
+      actions.Scene.stop();
     }
   }, [isRotating]);
 

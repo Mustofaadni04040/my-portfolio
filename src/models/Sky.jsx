@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei';
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useFrame } from '@react-three/fiber';
-import skyScene from '../assets/3d/sky3.glb';
+import skyScene from '../assets/3d/sky.glb';
 
 export default function Sky({ isRotating }) {
   const sky = useGLTF(skyScene);
