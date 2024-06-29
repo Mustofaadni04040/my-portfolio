@@ -103,7 +103,7 @@ export default function Home() {
         </Suspense>
       </Canvas>
 
-      <div className="absolute bottom-15 left-2 md:bottom-2 md:left-2">
+      <div className="absolute bottom-12 left-2 md:bottom-2 md:left-2">
         <img
           src={isPlayingMusic ? soundoff : soundon}
           alt="sound-icon"
