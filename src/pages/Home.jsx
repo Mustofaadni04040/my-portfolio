@@ -52,7 +52,7 @@ export default function Home() {
 
     if (window.innerWidth < 768) {
       screenScale = [0.1, 0.1, 0.1];
-      screenPosition = [0, -4, -8];
+      screenPosition = [0, -4, -12];
     } else {
       screenScale = [0.1, 0.1, 0.1];
       screenPosition = [0, -4, -6];
