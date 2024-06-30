@@ -29,11 +29,13 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="mt-5 flex flex-col">
-              <h4 className="text-2xl font-poppins font-semibold">
-                {project.name}
-              </h4>
-              <p className="mt-2 text-slate-500">{project.description}</p>
+            <div className="min-h-44 mt-5 flex flex-col justify-between">
+              <div>
+                <h4 className="text-2xl font-poppins font-semibold">
+                  {project.name}
+                </h4>
+                <p className="mt-2 text-slate-500">{project.description}</p>
+              </div>
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <Link
                   to={project.link}

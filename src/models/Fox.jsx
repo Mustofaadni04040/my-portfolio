@@ -9,7 +9,7 @@ Title: Fox
 import React, { useEffect, useRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
 import PropTypes from 'prop-types';
-import scene from '../assets/3d/fox.glb';
+import scene from '../assets/3d/monster2.glb';
 
 export default function Fox({ currentAnimation, ...props }) {
   const group = useRef();
@@ -27,37 +27,43 @@ export default function Fox({ currentAnimation, ...props }) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <primitive object={nodes.GLTF_created_0_rootJoint} />
-        <skinnedMesh
-          name="Object_7"
-          geometry={nodes.Object_7.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_7.skeleton}
-        />
-        <skinnedMesh
-          name="Object_8"
-          geometry={nodes.Object_8.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_8.skeleton}
-        />
-        <skinnedMesh
-          name="Object_9"
-          geometry={nodes.Object_9.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_9.skeleton}
-        />
-        <skinnedMesh
-          name="Object_10"
-          geometry={nodes.Object_10.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_10.skeleton}
-        />
-        <skinnedMesh
-          name="Object_11"
-          geometry={nodes.Object_11.geometry}
-          material={materials.PaletteMaterial001}
-          skeleton={nodes.Object_11.skeleton}
-        />
+        <group
+          name="Sketchfab_model"
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={50.762}
+        >
+          <group name="8031fbx" rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+            <group name="Object_2">
+              <group name="RootNode">
+                <group name="8031">
+                  <group name="GameObject" scale={1.25}>
+                    <group
+                      name="F1_xueqilinzuoqi"
+                      rotation={[-Math.PI / 2, 0, 0]}
+                      scale={1.25}
+                    />
+                    <group name="root">
+                      <group name="Object_8">
+                        <primitive object={nodes._rootJoint} />
+                        <skinnedMesh
+                          name="Object_11"
+                          geometry={nodes.Object_11.geometry}
+                          material={materials['8031_Material']}
+                          skeleton={nodes.Object_11.skeleton}
+                        />
+                        <group
+                          name="Object_10"
+                          rotation={[-Math.PI / 2, 0, 0]}
+                          scale={[1.562, 1.563, 1.563]}
+                        />
+                      </group>
+                    </group>
+                  </group>
+                </group>
+              </group>
+            </group>
+          </group>
+        </group>
       </group>
     </group>
   );

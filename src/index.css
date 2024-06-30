@@ -39,7 +39,7 @@ body:has(.card[data-color='green']:hover) {
   }
 
   .input {
-    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
+    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-900 block w-full p-2.5 mt-2.5 font-normal shadow-card;
   }
 
   .textarea {

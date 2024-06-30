@@ -18,7 +18,7 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
   function handleFocus() {
-    setCurrentAnimation('walk');
+    setCurrentAnimation('chuchang');
   }
   function handleBlur() {
     setCurrentAnimation('idle');
@@ -27,7 +27,7 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    setCurrentAnimation('hit');
+    setCurrentAnimation('run');
 
     emailjs
       .send(
@@ -152,7 +152,7 @@ export default function Contact() {
             <Suspense fallback={<Loader />}>
               <Fox
                 currentAnimation={currentAnimation}
-                position={[0.5, 0.35, 0]}
+                position={[-0.8, -1.3, 0]}
                 rotation={[12.6, -0.6, 0]}
                 scale={[0.5, 0.5, 0.5]}
               />

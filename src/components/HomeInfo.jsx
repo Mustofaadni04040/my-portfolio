@@ -27,7 +27,7 @@ const renderContent = {
       <br />
       Junior Front-End Web Developer
       <br />
-      <span className="text-xs mt-3">Drag your mouse to see Details</span>
+      <span className="text-xs mt-3">Drag or Swap to see Details</span>
     </h1>
   ),
   2: (

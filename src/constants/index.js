@@ -146,23 +146,23 @@ export const socialLinks = [
 export const projects = [
   {
     iconUrl: pricewise,
-    theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
+    theme: 'btn-back-green',
+    name: 'Crowdfunding Website',
     description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+      'Crowdfunding platform specifically to support fundraising for palestine. It provides for register user, login, donations list, user profile and payment for donation using midtrans.',
+    link: 'https://bersama-palestina.vercel.app',
   },
   {
     iconUrl: threads,
-    theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
+    theme: 'btn-back-blue',
+    name: '"Tweety Apps" Threads App',
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
+      'Created a replica of the popular discussion platform "Threads," enabling users to post threads and engage in threaded conversations.',
+    link: 'https://tweety-apps.vercel.app',
   },
   {
     iconUrl: car,
-    theme: 'btn-back-blue',
+    theme: 'btn-back-red',
     name: 'Car Finding App',
     description:
       'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
