@@ -47,7 +47,7 @@ body:has(.card[data-color='green']:hover) {
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-blue-400 to-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+    @apply text-white bg-gradient-to-r from-blue-400 to-blue-900 hover:bg-gradient-to-tr hover:from-blue-900 hover:to-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {

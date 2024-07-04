@@ -3,6 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+import { AnimatePresence, motion } from 'framer-motion';
 import { skills, experiences } from '../constants/index';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/CTA';
@@ -29,18 +30,35 @@ export default function About() {
         <h3 className="subhead-text">My Skills</h3>
 
         <div className="mt-16 flex flex-wrap gap-12">
-          {skills.map((skill, index) => (
-            <div key={index} className="block-container w-20 h-20">
-              <div className="btn-back rounded-xl" />
-              <div className="btn-front rounded-xl flex justify-center items-center cursor-pointer">
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-1/2 h-1/2 object-contain"
-                />
-              </div>
-            </div>
-          ))}
+          <AnimatePresence>
+            {skills.map((skill, index) => (
+              <motion.div
+                animate={{
+                  scale: [1, 1.2, 1.2, 1.2, 1],
+                  rotate: [0, 0, 360, 360, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: 'easeInOut',
+                  times: [0, 0.2, 0.5, 0.8, 1],
+                  repeat: Infinity,
+                  repeatDelay: 1,
+                }}
+                key={index}
+              >
+                <div className="block-container w-20 h-20">
+                  <div className="btn-back rounded-xl" />
+                  <div className="btn-front rounded-xl flex justify-center items-center cursor-pointer">
+                    <img
+                      src={skill.imageUrl}
+                      alt={skill.name}
+                      className="w-1/2 h-1/2 object-contain"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
 

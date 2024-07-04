@@ -26,6 +26,7 @@ import arrow from './arrow.svg';
 import contact from './contact.svg';
 import soundon from './soundon.png';
 import soundoff from './soundoff.png';
+import figma from './figma.svg';
 
 export {
   css,
@@ -56,4 +57,5 @@ export {
   contact,
   soundon,
   soundoff,
+  figma,
 };

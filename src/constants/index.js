@@ -1,6 +1,6 @@
 import { indosat, dicoding } from '../assets/images';
 import {
-  car,
+  // car,
   css,
   estate,
   express,
@@ -9,25 +9,44 @@ import {
   javascript,
   linkedin,
   mongodb,
-  motion,
   mui,
   nextjs,
   nodejs,
   pricewise,
   react,
   redux,
-  sass,
-  snapgram,
-  summiz,
+  // snapgram,
+  // summiz,
   tailwindcss,
   threads,
-  typescript,
+  // typescript,
+  figma,
 } from '../assets/icons';
 
 export const skills = [
   {
+    imageUrl: html,
+    name: 'HTML',
+    type: 'Frontend',
+  },
+  {
     imageUrl: css,
     name: 'CSS',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: javascript,
+    name: 'JavaScript',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: tailwindcss,
+    name: 'Tailwind CSS',
+    type: 'Frontend',
+  },
+  {
+    imageUrl: react,
+    name: 'React',
     type: 'Frontend',
   },
   {
@@ -41,24 +60,9 @@ export const skills = [
     type: 'Version Control',
   },
   {
-    imageUrl: html,
-    name: 'HTML',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: javascript,
-    name: 'JavaScript',
-    type: 'Frontend',
-  },
-  {
     imageUrl: mongodb,
     name: 'MongoDB',
     type: 'Database',
-  },
-  {
-    imageUrl: motion,
-    name: 'Motion',
-    type: 'Animation',
   },
   {
     imageUrl: mui,
@@ -76,29 +80,19 @@ export const skills = [
     type: 'Backend',
   },
   {
-    imageUrl: react,
-    name: 'React',
-    type: 'Frontend',
-  },
-  {
     imageUrl: redux,
     name: 'Redux',
     type: 'State Management',
   },
+  // {
+  //   imageUrl: typescript,
+  //   name: 'TypeScript',
+  //   type: 'Frontend',
+  // },
   {
-    imageUrl: sass,
-    name: 'Sass',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: tailwindcss,
-    name: 'Tailwind CSS',
-    type: 'Frontend',
-  },
-  {
-    imageUrl: typescript,
-    name: 'TypeScript',
-    type: 'Frontend',
+    imageUrl: figma,
+    name: 'Figma',
+    type: 'UI/UX',
   },
 ];
 
@@ -157,39 +151,15 @@ export const projects = [
     theme: 'btn-back-blue',
     name: '"Tweety Apps" Threads App',
     description:
-      'Created a replica of the popular discussion platform "Threads," enabling users to post threads and engage in threaded conversations.',
+      'Created a replica of the popular discussion platform "Threads", enabling users to post threads and engage in threaded conversations.',
     link: 'https://tweety-apps.vercel.app',
   },
   {
-    iconUrl: car,
-    theme: 'btn-back-red',
-    name: 'Car Finding App',
-    description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-  },
-  {
-    iconUrl: snapgram,
-    theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
-    description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
-  },
-  {
     iconUrl: estate,
-    theme: 'btn-back-black',
-    name: 'Real-Estate Application',
+    theme: 'btn-back-red',
+    name: '"NetNotes." Notes App',
     description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
-  },
-  {
-    iconUrl: summiz,
-    theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
-    description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+      'Designed and built a website app for taking and managing notes efficiently, features include login user, register, add note, delete note, archived note, search note functionality and support 2 languege (Bahasa Indonesia and English).',
+    link: 'https://netnotes.vercel.app',
   },
 ];
