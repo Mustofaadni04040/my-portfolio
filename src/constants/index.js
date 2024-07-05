@@ -25,61 +25,73 @@ import {
 
 export const skills = [
   {
+    delay: -0.3,
     imageUrl: html,
     name: 'HTML',
     type: 'Frontend',
   },
   {
+    delay: -0.6,
     imageUrl: css,
     name: 'CSS',
     type: 'Frontend',
   },
   {
+    delay: -0.9,
     imageUrl: javascript,
     name: 'JavaScript',
     type: 'Frontend',
   },
   {
+    delay: -1.2,
     imageUrl: tailwindcss,
     name: 'Tailwind CSS',
     type: 'Frontend',
   },
   {
+    delay: -1.5,
     imageUrl: react,
     name: 'React',
     type: 'Frontend',
   },
   {
+    delay: -1.8,
     imageUrl: express,
     name: 'Express',
     type: 'Backend',
   },
   {
+    delay: -2.1,
     imageUrl: github,
     name: 'GitHub',
     type: 'Version Control',
   },
   {
+    delay: -2.4,
     imageUrl: mongodb,
     name: 'MongoDB',
     type: 'Database',
   },
   {
+    delay: -2.7,
     imageUrl: mui,
     name: 'Material-UI',
     type: 'Frontend',
   },
   {
+    delay: -3,
     imageUrl: nextjs,
     name: 'Next.js',
     type: 'Frontend',
   },
   {
+    delay: -3.3,
     imageUrl: nodejs,
     name: 'Node.js',
     type: 'Backend',
   },
   {
+    delay: -3.6,
     imageUrl: redux,
     name: 'Redux',
     type: 'State Management',
@@ -90,6 +102,7 @@ export const skills = [
   //   type: 'Frontend',
   // },
   {
+    delay: -3.9,
     imageUrl: figma,
     name: 'Figma',
     type: 'UI/UX',

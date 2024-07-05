@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { projects } from '../constants';
 import { arrow } from '../assets/icons';
 import CTA from '../components/CTA';
@@ -17,7 +18,22 @@ export default function Projects() {
 
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project) => (
-          <div className="lg:w-[400px] w-full" key={project.name}>
+          <motion.div
+            className="lg:w-[400px] w-full"
+            key={project.name}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: 'spring',
+                damping: 5,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+          >
             <div className="block-container w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className="btn-front rounded-xl flex justify-center items-center">
@@ -52,7 +68,7 @@ export default function Projects() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

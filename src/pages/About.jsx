@@ -10,6 +10,12 @@ import CTA from '../components/CTA';
 import SocialLinks from '../components/SocialLinks';
 
 export default function About() {
+  const skillsTransition = {
+    repeat: Infinity,
+    duration: 0.9,
+    repeatType: 'mirror',
+  };
+
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -33,28 +39,23 @@ export default function About() {
           <AnimatePresence>
             {skills.map((skill, index) => (
               <motion.div
+                className="block-container w-20 h-20"
                 animate={{
-                  scale: [1, 1.2, 1.2, 1.2, 1],
-                  rotate: [0, 0, 360, 360, 0],
+                  scale: [0.75, 1.1],
                 }}
                 transition={{
-                  duration: 2,
-                  ease: 'easeInOut',
-                  times: [0, 0.2, 0.5, 0.8, 1],
-                  repeat: Infinity,
-                  repeatDelay: 1,
+                  ...skillsTransition,
+                  delay: skill.delay,
                 }}
                 key={index}
               >
-                <div className="block-container w-20 h-20">
-                  <div className="btn-back rounded-xl" />
-                  <div className="btn-front rounded-xl flex justify-center items-center cursor-pointer">
-                    <img
-                      src={skill.imageUrl}
-                      alt={skill.name}
-                      className="w-1/2 h-1/2 object-contain"
-                    />
-                  </div>
+                <div className="btn-back rounded-xl" />
+                <div className="btn-front rounded-xl flex justify-center items-center cursor-pointer">
+                  <img
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className="w-1/2 h-1/2 object-contain"
+                  />
                 </div>
               </motion.div>
             ))}
