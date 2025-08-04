@@ -25,16 +25,14 @@ const renderContent = {
       안녕하세요/Hello/Hi, I am{' '}
       <span className="font-semibold">Mustofa Adny</span>👋
       <br />
-      Junior Front-End Web Developer
+      Full-Stack Developer
       <br />
-      <span className="text-xs mt-3">
-        Drag or Swap (left/right) to see Details
-      </span>
+      <span className="text-xs mt-3">Swipe (left/right) to see Details</span>
     </h1>
   ),
   2: (
     <InfoBox
-      text="Interest career as a Full-Stack Web Developer and picked up skill along the way"
+      text="Interest career as a Full-Stack Developer and picked up skill along the way"
       link="/about"
       btnText="Learn More"
     />
