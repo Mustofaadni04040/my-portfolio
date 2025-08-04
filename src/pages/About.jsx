@@ -3,19 +3,13 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { skills, experiences } from '../constants/index';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/CTA';
 import SocialLinks from '../components/SocialLinks';
 
 export default function About() {
-  const skillsTransition = {
-    repeat: Infinity,
-    duration: 0.9,
-    repeatType: 'mirror',
-  };
-
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -26,10 +20,7 @@ export default function About() {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          Junior Front-End Web Developer with interest career as a Full-Stack
-          Web Developer and with strong desire for continuous learning.
-        </p>
+        <p>Full-Stack Developer with strong desire for continuous learning.</p>
       </div>
 
       <div className="py-10 flex flex-col">
@@ -38,17 +29,7 @@ export default function About() {
         <div className="mt-16 flex flex-wrap gap-12">
           <AnimatePresence>
             {skills.map((skill, index) => (
-              <motion.div
-                className="block-container w-20 h-20"
-                animate={{
-                  scale: [0.75, 1.1],
-                }}
-                transition={{
-                  ...skillsTransition,
-                  delay: skill.delay,
-                }}
-                key={index}
-              >
+              <div className="block-container w-20 h-20" key={index}>
                 <div className="btn-back rounded-xl" />
                 <div className="btn-front rounded-xl flex justify-center items-center cursor-pointer">
                   <img
@@ -57,7 +38,7 @@ export default function About() {
                     className="w-1/2 h-1/2 object-contain"
                   />
                 </div>
-              </motion.div>
+              </div>
             ))}
           </AnimatePresence>
         </div>

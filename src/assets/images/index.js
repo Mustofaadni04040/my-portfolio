@@ -6,5 +6,16 @@ import tesla from './tesla.png';
 import logo from './logo.svg';
 import indosat from './indosat.png';
 import dicoding from './dicoding.png';
+import winnicode from './winnicode.png';
 
-export { hero, meta, shopify, starbucks, tesla, logo, indosat, dicoding };
+export {
+  hero,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  logo,
+  indosat,
+  dicoding,
+  winnicode,
+};
