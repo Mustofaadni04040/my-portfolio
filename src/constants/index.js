@@ -308,7 +308,7 @@ export const projects = [
     theme: 'btn-back-orange',
     name: 'URL Shortener Server',
     description:
-      'Designed and built a website app for taking and managing notes efficiently, features include login user, register, add note, delete note, archived note, search note functionality and support 2 languege (Bahasa Indonesia and English).',
+      'Developing the backend for a URL shortener platform, with main features such as making custom short URLs, redirecting to long URLs, tracking clicks and user authentication.',
     link: 'https://github.com/Mustofaadni04040/url_shortener',
     type: 'Backend',
     stack: [
