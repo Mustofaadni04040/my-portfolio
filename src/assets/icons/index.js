@@ -35,6 +35,18 @@ import contact from './contact.svg';
 import soundon from './soundon.png';
 import soundoff from './soundoff.png';
 import figma from './figma.svg';
+import cart from './cart.png';
+import search from './search.png';
+import url from './url.png';
+import calendar from './calendar.png';
+import people from './people.png';
+import school from './school.png';
+import midtrans from './midtrans.png';
+import nextAuth from './nextAuth.png';
+import koa from './koa.png';
+import clerk from './clerk.png';
+import firebase from './firebase.svg';
+import prisma from './prisma.svg';
 
 export {
   css,
@@ -74,4 +86,16 @@ export {
   postman,
   vscode,
   npm,
+  cart,
+  search,
+  url,
+  calendar,
+  people,
+  school,
+  midtrans,
+  firebase,
+  nextAuth,
+  koa,
+  clerk,
+  prisma,
 };

@@ -1,6 +1,5 @@
 import { dicoding, winnicode } from '../assets/images';
 import {
-  // car,
   css,
   estate,
   express,
@@ -29,6 +28,18 @@ import {
   postman,
   vscode,
   npm,
+  cart,
+  search,
+  url,
+  calendar,
+  people,
+  school,
+  midtrans,
+  firebase,
+  nextAuth,
+  koa,
+  prisma,
+  clerk,
 } from '../assets/icons';
 
 export const skills = [
@@ -223,12 +234,125 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: people,
+    theme: 'btn-back-black',
+    name: '"SwiftWork" Project Management System',
+    description:
+      'SwiftWork provides a flexible multi-workspace system where each workspace manages its own projects, tasks, and members. It includes robust project and task management features, role-based user control, and team collaboration tools. Users can assign tasks, set deadlines, track progress, and analyze project performance through an integrated analytics dashboard. The platform also supports user invitations, role management, and activity monitoring to ensure efficient and organized teamwork.',
+    link: 'https://swiftwork-eta.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'React', icon: react },
+      { name: 'TypeScript', icon: typescript },
+      { name: 'TailwindCSS', icon: tailwindcss },
+      { name: 'Redux', icon: redux },
+      { name: 'NodeJS', icon: nodejs },
+      { name: 'ExpressJS', icon: express },
+      { name: 'PostgreSQL', icon: postgresql },
+      { name: 'Prisma', icon: prisma },
+      { name: 'Clerk', icon: clerk },
+    ],
+  },
+  {
+    iconUrl: school,
+    theme: 'btn-back-pink',
+    name: '"Schola." School Management System',
+    description:
+      "Schola is a full-stack school management system built with Next.js, TypeScript, Prisma, and PostgreSQL, designed to digitize academic workflows. The platform implements a secure authentication and authorization flow using Clerk, supporting three user roles: Admin, Teacher, Parent and Student. Admins can manage school data, including classes, subjects, teachers, students, and scheduling. Teachers can manage attendance, assignments, grades, and class materials. Students can access their schedules, learning materials, and announcements, and parents can monitor their children's progress.",
+    link: 'https://schola-tau.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'NextJS', icon: nextjs },
+      { name: 'TypeScript', icon: typescript },
+      { name: 'TailwindCSS', icon: tailwindcss },
+      { name: 'PostgreSQL', icon: postgresql },
+      { name: 'Prisma', icon: prisma },
+      { name: 'Clerk', icon: clerk },
+    ],
+  },
+  {
+    iconUrl: search,
+    theme: 'btn-back-red',
+    name: '"Seeker." Job Portal Platform',
+    description:
+      'Seeker is a finding job platform that allows users to register as job seekers or recruiters, with main features such as manage job posts, apply for jobs and manage job applications through a recruiter dashboard.',
+    link: 'https://seeker-snowy.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'React', icon: react },
+      { name: 'JavaScript', icon: javascript },
+      { name: 'TailwindCSS', icon: tailwindcss },
+      { name: 'Redux', icon: redux },
+      { name: 'NodeJS', icon: nodejs },
+      { name: 'ExpressJS', icon: express },
+      { name: 'MongoDB', icon: mongodb },
+    ],
+  },
+  {
+    iconUrl: calendar,
+    theme: 'btn-back-blue',
+    name: 'Eventku Server',
+    description:
+      'Developing the backend for an event management platform, including endpoints for user authentication (JWT & OTP), role-based access control, event, talent, category, and payment management, as well as email notification integration and search functionality with pagination using REST API and MongoDB.',
+    link: 'https://github.com/Mustofaadni04040/semina-server',
+    type: 'Backend',
+    stack: [
+      { name: 'JavaScript', icon: javascript },
+      { name: 'NodeJS', icon: nodejs },
+      { name: 'ExpressJS', icon: express },
+      { name: 'MongoDB', icon: mongodb },
+    ],
+  },
+  {
+    iconUrl: url,
+    theme: 'btn-back-orange',
+    name: 'URL Shortener Server',
+    description:
+      'Designed and built a website app for taking and managing notes efficiently, features include login user, register, add note, delete note, archived note, search note functionality and support 2 languege (Bahasa Indonesia and English).',
+    link: 'https://github.com/Mustofaadni04040/url_shortener',
+    type: 'Backend',
+    stack: [
+      { name: 'TypeScript', icon: typescript },
+      { name: 'PostgreSQL', icon: postgresql },
+      { name: 'NodeJS', icon: nodejs },
+      { name: 'KoaJS', icon: koa },
+    ],
+  },
+  {
+    iconUrl: cart,
+    theme: 'btn-back-yellow',
+    name: '"Musshop" E-Commerce App',
+    description:
+      'Musshop is an e-commerce app that allows users to browse products, add them to a cart, and checkout for payment using midtrans.',
+    link: 'https://musstore-phi.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'NextJS', icon: nextjs },
+      { name: 'TypeScript', icon: typescript },
+      { name: 'Sass', icon: sass },
+      { name: 'NextAuth', icon: nextAuth },
+      { name: 'Firebase', icon: firebase },
+    ],
+  },
+
+  {
     iconUrl: pricewise,
     theme: 'btn-back-green',
     name: 'Crowdfunding Website',
     description:
       'Crowdfunding platform specifically to support fundraising for palestine. It provides for register user, login, donations list, user profile and payment for donation using midtrans.',
     link: 'https://bersama-palestina.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'React', icon: react },
+      { name: 'JavaScript', icon: javascript },
+      { name: 'TailwindCSS', icon: tailwindcss },
+      { name: 'Redux', icon: redux },
+      { name: 'MongoDB', icon: mongodb },
+      { name: 'Express', icon: express },
+      { name: 'NodeJS', icon: nodejs },
+      { name: 'Midtrans', icon: midtrans },
+    ],
   },
   {
     iconUrl: threads,
@@ -237,13 +361,23 @@ export const projects = [
     description:
       'Created a replica of the popular discussion platform "Threads", enabling users to post threads and engage in threaded conversations.',
     link: 'https://tweety-apps.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'React', icon: react },
+      { name: 'TailwindCSS', icon: tailwindcss },
+    ],
   },
   {
     iconUrl: estate,
     theme: 'btn-back-red',
     name: '"NetNotes." Notes App',
     description:
-      'Designed and built a website app for taking and managing notes efficiently, features include login user, register, add note, delete note, archived note, search note functionality and support 2 languege (Bahasa Indonesia and English).',
+      'Designed and built a website app for taking and managing notes efficiently, features include login user, register, add note, delete note, archived note, search note functionality and support 2 languege (Bahasa and English).',
     link: 'https://netnotes.vercel.app',
+    type: 'Fullstack',
+    stack: [
+      { name: 'React', icon: react },
+      { name: 'TailwindCSS', icon: tailwindcss },
+    ],
   },
 ];

@@ -5,6 +5,7 @@ import { projects } from '../constants';
 import { arrow } from '../assets/icons';
 import CTA from '../components/CTA';
 import SocialLinks from '../components/SocialLinks';
+import ReadMoreText from '../components/ReadMoreText';
 
 export default function Projects() {
   return (
@@ -45,12 +46,29 @@ export default function Projects() {
               </div>
             </div>
 
-            <div className="min-h-44 mt-5 flex flex-col justify-between">
+            <div className="md:min-h-64 mt-5 flex flex-col justify-between">
               <div>
                 <h4 className="text-2xl font-poppins font-semibold">
                   {project.name}
                 </h4>
-                <p className="mt-2 text-slate-500">{project.description}</p>
+                <div className="flex flex-col items-start">
+                  <span className="text-sm font-medium mt-1">
+                    • {project.type}
+                  </span>{' '}
+                  <div className="flex items-center w-12 h-12 gap-2">
+                    {project.stack.map((item, index) => (
+                      <img
+                        key={index}
+                        src={item.icon}
+                        alt={item.name}
+                        className="w-1/2 h-1/2 object-contain mx-auto"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-2 text-slate-500">
+                  <ReadMoreText text={project.description} maxLength={100} />
+                </div>
               </div>
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <Link
