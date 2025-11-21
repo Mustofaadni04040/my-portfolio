@@ -7,13 +7,13 @@ export default function SocialLinks() {
   return (
     <section className="mt-10">
       <div className="flex items-center justify-between">
-        <p className="text-slate-500">Let&apos;s Connect</p>
+        <p className="hidden md:block text-slate-500">Let&apos;s Connect</p>
         <div className="flex items-center gap-5">
           <div>
             <a
               href="/mustofa-adny-CV.pdf"
               download="mustofa-adny-CV.pdf"
-              className="flex items-center gap-2 text-slate-500 hover:text-slate-700 duration-200"
+              className="btn flex items-center gap-2 text-slate-500 hover:text-slate-700 duration-200"
             >
               Download CV
               <RxDownload />

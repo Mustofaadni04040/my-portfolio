@@ -8,6 +8,7 @@ import { skills, experiences } from '../constants/index';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/CTA';
 import SocialLinks from '../components/SocialLinks';
+import ReadMoreText from '../components/ReadMoreText';
 
 export default function About() {
   return (
@@ -20,7 +21,16 @@ export default function About() {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Full-Stack Developer with strong desire for continuous learning.</p>
+        <ReadMoreText
+          text=" Fullstack Web Developer with hands-on experience in building
+          end-to-end web applications using ReactJS, Next.js, Express.js
+          (Node.js), and other modern technologies. Skilled in developing
+          responsive user interfaces and efficient backend APIs. Strong interest
+          in Software Engineering, with the ability to quickly learn new
+          technologies, think critically, and contribute effectively within
+          dynamic and collaborative development teams."
+          maxLength={200}
+        />
       </div>
 
       <div className="py-10 flex flex-col">
