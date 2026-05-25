@@ -22,13 +22,7 @@ export default function About() {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <ReadMoreText
-          text=" Fullstack Web Developer with hands-on experience in building
-          end-to-end web applications using ReactJS, Next.js, Express.js
-          (Node.js), and other modern technologies. Skilled in developing
-          responsive user interfaces and efficient backend APIs. Strong interest
-          in Software Engineering, with the ability to quickly learn new
-          technologies, think critically, and contribute effectively within
-          dynamic and collaborative development teams."
+          text=" Fullstack Developer with experience building scalable web applications using ReactJS, NextJS, ExpressJS, and Spring Boot. Passionate about distributed systems, backend engineering, and microservices architecture. Experienced in developing REST APIs, authentication systems, event-driven communication using Kafka/RabbitMQ, and managing deployment environments with Docker."
           maxLength={200}
         />
       </div>

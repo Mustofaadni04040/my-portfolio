@@ -40,6 +40,13 @@ import {
   koa,
   prisma,
   clerk,
+  java,
+  springBoot,
+  kafka,
+  keycloak,
+  rabbitmq,
+  zipkin,
+  ebdesk,
 } from '../assets/icons';
 
 export const skills = [
@@ -60,6 +67,42 @@ export const skills = [
     imageUrl: typescript,
     name: 'TypeScript',
     type: 'Frontend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: java,
+    name: 'Java',
+    type: 'Backend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: springBoot,
+    name: 'Spring Boot',
+    type: 'Backend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: kafka,
+    name: 'Kafka',
+    type: 'Backend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: rabbitmq,
+    name: 'RabbitMQ',
+    type: 'Backend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: keycloak,
+    name: 'Keycloak',
+    type: 'Backend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: zipkin,
+    name: 'Zipkin',
+    type: 'Backend',
   },
   {
     delay: -0.9,
@@ -192,6 +235,17 @@ export const skills = [
 export const experiences = [
   {
     title: 'Full Stack Developer',
+    company_name: 'PT. eBdesk Teknologi Indonesia',
+    icon: ebdesk,
+    iconBg: '#fcf9d7',
+    date: 'Jan 2026 - Apr 2026',
+    points: [
+      'RETS (Real-time Event Tracking System): Developed a security intelligence platform to monitor public narratives and strategic threats in real-time using sentiment analysis, interactive geospatial mapping, and news anomaly detection systems.',
+      'Air Bridge Command Center (Tactical Papua): Developed a Logistics and Tactical Monitoring Dashboard for the Papua region, integrating flight tracking, fleet asset management, regional food stock monitoring, and live communication feeds for emergency mission coordination.',
+    ],
+  },
+  {
+    title: 'Full Stack Developer',
     company_name: 'PT. Winnicode Garuda Teknologi',
     icon: winnicode,
     iconBg: '#FFB5E1',
@@ -233,6 +287,41 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: cart,
+    theme: 'btn-back-blue',
+    name: 'E-Commerce Microservices',
+    description:
+      'E-Commerce Microservices is an e-commerce backend platform built with Spring Boot and Spring Cloud, designed around a scalable microservices architecture. It includes centralized configuration via Config Server, service discovery with Eureka, and an API Gateway secured by Keycloak (OAuth2/JWT) as the single entry point. The system uses PostgreSQL for product and order data, MongoDB for user data, and an event-driven workflow with Kafka where order events are published and consumed by a notification service. It also integrates Zipkin for distributed tracing and provides a Docker Compose setup to run the full infrastructure locally for fast development and testing.',
+    link: 'https://github.com/Mustofaadni04040/ecom-micro-service',
+    type: 'Backend',
+    stack: [
+      { name: 'Java', icon: java },
+      { name: 'Spring Boot', icon: springBoot },
+      { name: 'PostgreSQL', icon: postgresql },
+      { name: 'MongoDB', icon: mongodb },
+      { name: 'Kafka', icon: kafka },
+      { name: 'Keycloak', icon: keycloak },
+      { name: 'Docker', icon: docker },
+    ],
+  },
+  {
+    iconUrl: search,
+    theme: 'btn-back-green',
+    name: 'JobApp Microservices',
+    description:
+      'JobApp Microservices is a Spring Cloud-based microservices system for a job application domain, split into Company, Job, and Review services. It uses Eureka for service discovery, a centralized Config Server for configuration management, and an API Gateway as a single entry point with path-based routing. Data is persisted with PostgreSQL via Spring Data JPA, while RabbitMQ enables asynchronous communication between services. The platform includes production-ready observability with Actuator, Micrometer Tracing, and Zipkin, and improves resilience on critical service calls using Resilience4j (circuit breaker and rate limiting).',
+    link: 'https://github.com/Mustofaadni04040/jobapp-microservices',
+    type: 'Backend',
+    stack: [
+      { name: 'Java', icon: java },
+      { name: 'Spring Boot', icon: springBoot },
+      { name: 'PostgreSQL', icon: postgresql },
+      { name: 'RabbitMQ', icon: rabbitmq },
+      { name: 'Zipkin', icon: zipkin },
+      { name: 'Docker', icon: docker },
+    ],
+  },
   {
     iconUrl: people,
     theme: 'btn-back-black',

@@ -39,9 +39,16 @@ import cart from './cart.png';
 import search from './search.png';
 import url from './url.png';
 import calendar from './calendar.png';
+import zipkin from './zipkin.png';
+import java from './java.png';
+import kafka from './kafka.png';
+import rabbitmq from './rabbitmq.png';
+import keycloak from './keycloak.png';
+import springBoot from './spring-boot.png';
 import people from './people.png';
 import school from './school.png';
 import midtrans from './midtrans.png';
+import ebdesk from './ebdesk.png';
 import nextAuth from './nextAuth.png';
 import koa from './koa.png';
 import clerk from './clerk.png';
@@ -98,4 +105,11 @@ export {
   koa,
   clerk,
   prisma,
+  zipkin,
+  java,
+  kafka,
+  rabbitmq,
+  keycloak,
+  springBoot,
+  ebdesk,
 };
