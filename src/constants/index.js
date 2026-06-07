@@ -47,6 +47,7 @@ import {
   rabbitmq,
   zipkin,
   ebdesk,
+  auth0,
 } from '../assets/icons';
 
 export const skills = [
@@ -96,6 +97,12 @@ export const skills = [
     delay: -0.9,
     imageUrl: keycloak,
     name: 'Keycloak',
+    type: 'Backend',
+  },
+  {
+    delay: -0.9,
+    imageUrl: auth0,
+    name: 'Auth0',
     type: 'Backend',
   },
   {
@@ -237,7 +244,7 @@ export const experiences = [
     title: 'Full Stack Developer',
     company_name: 'PT. eBdesk Teknologi Indonesia',
     icon: ebdesk,
-    iconBg: '#fcf9d7',
+    iconBg: '#F4E3C7',
     date: 'Jan 2026 - Apr 2026',
     points: [
       'RETS (Real-time Event Tracking System): Developed a security intelligence platform to monitor public narratives and strategic threats in real-time using sentiment analysis, interactive geospatial mapping, and news anomaly detection systems.',
@@ -287,6 +294,23 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: pricewise,
+    theme: 'btn-back-yellow',
+    name: 'Bank Microservices',
+    description:
+      'Bank Microservices is a banking backend platform built with Spring Boot and a modular microservices architecture, covering account management, customer management, biller management, bill payment orchestration, batch processing, and settlement flow. It uses OAuth2/JWT with Auth0 to secure endpoints and service-to-service communication, PostgreSQL for persistence across core services, and Kafka to power the asynchronous bill payment pipeline from fund hold, batching, and settlement to final payment status updates. The project also includes shared modules for security, DTOs, and observability, along with a Docker Compose setup for local Kafka, Zookeeper, and Kafka UI to support end-to-end development and message flow testing.',
+    link: 'https://github.com/Mustofaadni04040/digital-bank-microservice',
+    type: 'Backend',
+    stack: [
+      { name: 'Java', icon: java },
+      { name: 'Spring Boot', icon: springBoot },
+      { name: 'PostgreSQL', icon: postgresql },
+      { name: 'Kafka', icon: kafka },
+      { name: 'Auth0', icon: auth0 },
+      { name: 'Docker', icon: docker },
+    ],
+  },
   {
     iconUrl: cart,
     theme: 'btn-back-blue',

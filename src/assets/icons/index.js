@@ -52,6 +52,7 @@ import ebdesk from './ebdesk.png';
 import nextAuth from './nextAuth.png';
 import koa from './koa.png';
 import clerk from './clerk.png';
+import auth0 from './auth0.png';
 import firebase from './firebase.svg';
 import prisma from './prisma.svg';
 
@@ -112,4 +113,5 @@ export {
   keycloak,
   springBoot,
   ebdesk,
+  auth0,
 };
